@@ -1,10 +1,10 @@
-# EduYemek QA Automation Project
+# Eduyemek QA Automation Project
 
-This project is a Selenium-based test automation project that includes automated testing processes for the [EduYemek](https://www.eduyemek.com) web application.
+This project is a Selenium-based test automation project that includes automated testing processes for the [Eduyemek](https://www.eduyemek.com) web application.
 
 ## 📋 About the Project
 
-This project is a web automation test project developed using the Page Object Model (POM) design pattern. It is designed to test the core functionalities of the EduYemek platform.
+This project is a web automation test project developed using the Page Object Model (POM) design pattern. It is designed to test the core functionalities of the Eduyemek platform.
 
 ### Tested Features
 
