@@ -4,12 +4,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from pages.login_page import LoginPage
+from utilities.read_properties import ReadConfig
 
 class TestLogin:
-    login_url = "https://www.eduyemek.com/account/login"
-    email = "test@itu.edu.tr"
-    password = "test123"
-    invalid_email = "abc@itu.edu.tr"
+    login_url = ReadConfig.get_login_page_url()
+    email = ReadConfig.get_email()
+    password = ReadConfig.get_password()
+    invalid_email = ReadConfig.get_invalid_email()
 
     def test_login(self, setup):
         self.driver = setup
