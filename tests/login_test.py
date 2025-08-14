@@ -5,14 +5,17 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from pages.login_page import LoginPage
 from utilities.read_properties import ReadConfig
+from utilities.custom_logger import LogMaker
 
 class TestLogin:
     login_url = ReadConfig.get_login_page_url()
     email = ReadConfig.get_email()
     password = ReadConfig.get_password()
     invalid_email = ReadConfig.get_invalid_email()
+    logger = LogMaker.log_gen()
 
     def test_login(self, setup):
+        self.logger.info("*************test_login function started*************")
         self.driver = setup
         self.driver.get(self.login_url)
 
@@ -26,14 +29,18 @@ class TestLogin:
         ).text
 
         if filter_title == "Filtrele":
+            self.logger.info("*************Login successful - Filter title matched*************")
             assert True
         else:
+            self.logger.error("*************Login failed - Filter title mismatch*************") 
             self.driver.save_screenshot(".\\screenshots\\test_login_failed.png")
             assert False
 
         self.driver.close()
 
     def test_invalid_login(self, setup):
+        self.logger.info("*************test_invalid_login function started*************")
+
         self.driver = setup
         self.driver.get(self.login_url)
 
@@ -47,8 +54,10 @@ class TestLogin:
         ).text
 
         if notification_text == "Geçersiz bilgiler":
+            self.logger.info("*************Invalid login test passed - Error message displayed*************")
             assert True
         else:
+            self.logger.error("*************Invalid login test failed - Error message mismatch*************")
             self.driver.save_screenshot(".\\screenshots\\test_invalid_login_failed.png")
             assert False
 

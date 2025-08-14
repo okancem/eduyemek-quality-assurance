@@ -1,0 +1,4 @@
+2025-08-13 21:35:24:INFO:*************test_login function started*************
+2025-08-13 21:35:26:INFO:*************Login successful - Filter title matched*************
+2025-08-13 21:35:27:INFO:*************test_invalid_login function started*************
+2025-08-13 21:35:29:INFO:*************Invalid login test passed - Error message displayed*************
