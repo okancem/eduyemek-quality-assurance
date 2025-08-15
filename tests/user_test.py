@@ -6,14 +6,17 @@ from selenium.webdriver.support import expected_conditions as EC
 from pages.login_page import LoginPage
 from pages.user_page import UserPage
 from utilities.read_properties import ReadConfig
+from utilities.custom_logger import LogMaker
 
 class TestUser:
     login_url = ReadConfig.get_login_page_url()
     email = ReadConfig.get_email()
     password = ReadConfig.get_password()
     restaurant_name = ReadConfig.get_restaurant_name()
+    logger = LogMaker.log_gen()
 
     def test_add_to_basket(self, setup):
+        self.logger.info("*************test_add_to_basket function started*************")
         self.driver = setup
         self.driver.get(self.login_url)
 
@@ -34,8 +37,10 @@ class TestUser:
         ).text
 
         if successfully_added_to_basket == "Ürün sepete eklendi":
+            self.logger.info("*************test_add_to_basket function passed*************")
             assert True
         else:
+            self.logger.info("*************test_add_to_basket function failed*************")
             self.driver.save_screenshot(".\\screenshots\\test_add_to_basket_failed.png")
             assert False
 
