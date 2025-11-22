@@ -24,17 +24,27 @@ class TestLogin:
         self.login_page.enter_password(self.password)
         self.login_page.click_login_button()
 
-        filter_title = WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located((By.CSS_SELECTOR, ".filter-main-title"))
-        ).text
+        try:
+            filter_title = WebDriverWait(self.driver, 10).until(
+                EC.visibility_of_element_located(
+                    (By.XPATH,
+                     "//*[@id='filterBar']//h3[text()='Filtrele'] | //*[@id='filterToggleBtn' and text()='Filtrele']")
+                )
+            )
 
-        if filter_title == "Filtrele":
-            self.logger.info("*************Login successful - Filter title matched*************")
-            assert True
-        else:
-            self.logger.error("*************Login failed - Filter title mismatch*************") 
+            if filter_title == "Filtrele":
+                self.logger.info("*************Login successful - Filter title matched*************")
+                assert True
+            else:
+                self.logger.error("*************Login failed - Filter title mismatch*************") 
+                self.driver.save_screenshot(".\\screenshots\\test_login_failed.png")
+                assert False
+
+        except Exception as e:
+            self.logger.error(f"Element not found: {str(e)}")
             self.driver.save_screenshot(".\\screenshots\\test_login_failed.png")
             assert False
+        
 
         self.driver.close()
 

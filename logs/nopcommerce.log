@@ -1,4 +1,56 @@
-2025-08-13 21:35:24:INFO:*************test_login function started*************
-2025-08-13 21:35:26:INFO:*************Login successful - Filter title matched*************
-2025-08-13 21:35:27:INFO:*************test_invalid_login function started*************
-2025-08-13 21:35:29:INFO:*************Invalid login test passed - Error message displayed*************
+2025-11-21 22:48:59:INFO:*************test_login function started*************
+2025-11-21 22:49:04:INFO:Attempting to locate <h3> version of 'Filtrele'
+2025-11-21 22:49:09:INFO:Attempting to locate <h3> version of 'Filtrele'
+2025-11-21 22:49:14:ERROR:Element not found: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF663E880D5+2992373]
+	(No symbol) [0x00007FF663B1BFD0]
+	(No symbol) [0x00007FF6639B590A]
+	(No symbol) [0x00007FF663A0926E]
+	(No symbol) [0x00007FF663A0955C]
+	(No symbol) [0x00007FF663A527D7]
+	(No symbol) [0x00007FF663A2F3AF]
+	(No symbol) [0x00007FF663A4F584]
+	(No symbol) [0x00007FF663A2F113]
+	(No symbol) [0x00007FF6639FA918]
+	(No symbol) [0x00007FF6639FBA81]
+	GetHandleVerifier [0x00007FF663EE6A2D+3379789]
+	GetHandleVerifier [0x00007FF663EFC32D+3468109]
+	GetHandleVerifier [0x00007FF663EF0043+3418211]
+	GetHandleVerifier [0x00007FF663C7C78B+847787]
+	(No symbol) [0x00007FF663B2757F]
+	(No symbol) [0x00007FF663B22FC4]
+	(No symbol) [0x00007FF663B2315D]
+	(No symbol) [0x00007FF663B12979]
+	BaseThreadInitThunk [0x00007FFE6821E8D7+23]
+	RtlUserThreadStart [0x00007FFE6924C53C+44]
+
+2025-11-21 22:49:16:INFO:*************test_invalid_login function started*************
+2025-11-21 22:49:22:INFO:*************Invalid login test passed - Error message displayed*************
+2025-11-21 22:51:35:INFO:*************test_login function started*************
+2025-11-21 22:51:50:ERROR:Element not found: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF663E880D5+2992373]
+	(No symbol) [0x00007FF663B1BFD0]
+	(No symbol) [0x00007FF6639B590A]
+	(No symbol) [0x00007FF663A0926E]
+	(No symbol) [0x00007FF663A0955C]
+	(No symbol) [0x00007FF663A527D7]
+	(No symbol) [0x00007FF663A2F3AF]
+	(No symbol) [0x00007FF663A4F584]
+	(No symbol) [0x00007FF663A2F113]
+	(No symbol) [0x00007FF6639FA918]
+	(No symbol) [0x00007FF6639FBA81]
+	GetHandleVerifier [0x00007FF663EE6A2D+3379789]
+	GetHandleVerifier [0x00007FF663EFC32D+3468109]
+	GetHandleVerifier [0x00007FF663EF0043+3418211]
+	GetHandleVerifier [0x00007FF663C7C78B+847787]
+	(No symbol) [0x00007FF663B2757F]
+	(No symbol) [0x00007FF663B22FC4]
+	(No symbol) [0x00007FF663B2315D]
+	(No symbol) [0x00007FF663B12979]
+	BaseThreadInitThunk [0x00007FFE6821E8D7+23]
+	RtlUserThreadStart [0x00007FFE6924C53C+44]
+
+2025-11-21 22:51:52:INFO:*************test_invalid_login function started*************
+2025-11-21 22:51:58:INFO:*************Invalid login test passed - Error message displayed*************
