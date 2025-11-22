@@ -169,23 +169,9 @@ Failed tests are automatically saved to the `screenshots/` folder:
 - `test_invalid_login_failed.png`
 - `test_add_to_basket_failed.png`
 
-## 🤝 Contributing
-
-1. Fork this repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📄 License
 
 This project is licensed under the MIT License.
-
-## 📞 Contact
-
-For questions about the project:
-
-- GitHub Issues: [Project Issues Page](https://github.com/your-username/eduyemek_qa/issues)
 
 ## 🔄 Updates
 
@@ -195,7 +181,3 @@ For questions about the project:
 - Basic login and user operation tests
 - Page Object Model implementation
 - HTML and Allure reporting support
-
----
-
-⭐ If you like this project, don't forget to give it a star!
