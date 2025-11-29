@@ -181,3 +181,12 @@ This project is licensed under the MIT License.
 - Basic login and user operation tests
 - Page Object Model implementation
 - HTML and Allure reporting support
+
+## 📧 Contact
+
+Feel free to reach out if you want to discuss the project or ask questions! 
+
+| Contact Channel | Information |
+| :--- | :--- |
+| **Email** | okancem1122@gmail.com |
+| **LinkedIn** | https://www.linkedin.com/in/okan-cem/ |
