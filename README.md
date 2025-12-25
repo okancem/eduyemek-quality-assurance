@@ -54,7 +54,7 @@ eduyemek_qa/
 1. **Clone the project:**
 
    ```bash
-   git clone https://github.com/your-username/eduyemek_qa.git
+   git clone https://github.com/okancem/eduyemek_qa.git
    cd eduyemek_qa
    ```
 
