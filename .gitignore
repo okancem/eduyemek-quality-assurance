@@ -1,0 +1,5 @@
+# Secrets
+credentials.py
+.env
+config.ini
+*.env
